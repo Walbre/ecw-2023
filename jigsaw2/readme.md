@@ -504,7 +504,7 @@ No existing score for {'token_len_max': 27, 'token_len': 27, 'forbidden_words': 
 Please give your username for the leaderboard
 ```
 
-We can see that it did nothing which means the variable is localy reset at each input, and taht this input surely is done in a function.
+We can see that it did nothing which means the variable is localy reset at each input, so, the imput is likealy done in a function.
 
 To sum up all my discorvries, I decided to do an imitation of what I think was ran on the backend
 
@@ -556,9 +556,9 @@ Traceback (most recent call last):
 SyntaxError: invalid syntax
 ```
 
-Sooo, we need exec, which means we firetly need to find a way to bypass the blocklist.
+Sooo, we need exec, which means we firstly need to find a way to bypass the blacklist.
 
-After a bit research, I found something interesting. If you search `unicode e` on google, you'll find out that tere is multiple e, for example, `ｅ` and `e` aren't the same, but for python 
+After a bit of research, I found something interesting. If you search `unicode e` on google, you'll find out that there's multiple e, for example, `ｅ` and `e` aren't the same, but for python 
 
 ```py
 >>> "ｅ" == "e"
@@ -580,9 +580,9 @@ import os
 b = os.listdir()
 ```
 
-In python, the rule is that if we are in a functions and we do something like `a = 5` then `a` will be local, but if we do `global a;a = 5`, `a` will be a global varibale, accessible across all program. But if we need to change this varaible, we need to reuse `global a` because doing something like `global a;a=5` and after that `a+=5`, will define 2 varaible, the local one = 10 and the global one = 5.
+In python, the rule is that if we are in a functions and we do something like `a = 5` then `a` will be local, but if we do `global a;a = 5`, `a` will be a global varibale, accessible across all program. But if we need to change this varaible, we need to re-use `global a` because doing something like `global a;a=5` and after that `a+=5`, will define 2 varaible, the local one = 10 and the global one = 5.
 
-After a some troubleshouting it appears that this also applies to modules, so if we want to import os, we need to execute `global os;import os`.
+After some troubleshouting it appears that this also applies to modules, so if we want to import os, we need to execute `global os;import os`.
 
 So, the payload needs to be changed a litle to match what I just said.
 
@@ -782,7 +782,7 @@ To overcome this problem, I simple created a new varaible called `c = '"'`. How 
 
 When we create a new variable, we only need to use `=` and not `+=`, so we basically can send 2 characters during affectaion. So I just need to create `c ` with `exec('c="\""')` and then use `c` with `exec('a+=c')`.
 
-Let's create the proogram, as for the previous one, I won't put everything here, you can find the complete program [here](scripts/jigsaw-get-flag.py)
+Let's create the program, as for the previous one, I won't put everything here, you can find the complete program [here](scripts/jigsaw-get-flag.py)
 
 ```py
 ### global os;import os

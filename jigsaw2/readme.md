@@ -440,7 +440,7 @@ There are 3 main functions native to python that fill this role :
 - locals() : return all local varaibles
 - globals() : return declared objects (functions / varaibles) in the global scope
 
-So naturally, I tried getting the local varaibles first
+So naturally, I tried getting the local variables first
 
 ```py
 {'user_name':locals()}

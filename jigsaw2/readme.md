@@ -1,6 +1,6 @@
 # Jigsaw2
 
-As for Jigsaw1 last year, the goal of this challenge is to answer a series of questions. I'll only give my script for parts 1 to 3.
+As for Jigsaw1 last year, the goal of this challenge is to answer a series of questions. I wont give any details for parts 1 to 3.
 
 ![header](images/chall_head.png)
 

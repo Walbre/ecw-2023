@@ -403,7 +403,7 @@ For that, I'll send the payload
 {'user_name': os.popen('ls').read()}
 ```
 
-And we have thins answer
+And we have this answer
 
 ```
 b'Please give your username for the leaderboard\n'

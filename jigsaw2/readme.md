@@ -1026,4 +1026,4 @@ Please give your username for the leaderboard
 
 And here we got the flag.
 
-For those who wonder why I didn't automate something with a loop, there is 2 reasons, firstly it was late and I prefered to do a writeup on how I flaged the challenge the first time, secondly base64.b64encode does shit when you give hime the ｅ.
+For those who wonder why I didn't automate something with a loop, there is 2 reasons, firstly it was late and I prefered to do a writeup on how I flaged the challenge the first time, secondly base64.b64encode does shit when you give him the ｅ.

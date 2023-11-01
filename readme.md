@@ -12,4 +12,4 @@ Here are the links for the writeups of :
 
     - [Under construction](under_construction/)
 
-    - [FireBurn](fireburn/)
+    - [FireBurn](fireBurn/)
